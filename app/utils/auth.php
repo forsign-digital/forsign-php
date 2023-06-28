@@ -46,5 +46,10 @@ function utilsAuthGetUser()
 // Verifica se o usuário está autenticado
 function utilsAuthIsAuthenticated()
 {
-    return isset($_COOKIE["authentication"]);
+    if (!isset($_COOKIE["authentication"])) {
+        return false;
+    }
+
+    $user = utilsAuthGetUser();
+    return isset($user->name);
 }

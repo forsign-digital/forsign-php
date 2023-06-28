@@ -1,0 +1,37 @@
+.operation-create {
+  .form-member {
+    border-width: var(--bs-border-width);
+    border-style: var(--bs-border-style);
+    border-color: var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: var(--bs-gutter-x);
+    padding-bottom: 0;
+  }
+
+  .accordion {
+    margin: 0 -12px;
+
+    .accordion-item {
+      background-color: transparent;
+      border: 0 none;
+
+      .accordion-header {
+        .accordion-button {
+          background-color: var(--bs-gray-300);
+          border-radius: 0;
+          box-shadow: none;
+          padding: 2px;
+
+          &:after {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        .accordion-body {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

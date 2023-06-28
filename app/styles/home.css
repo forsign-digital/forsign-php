@@ -1,3 +1,7 @@
+main.container {
+  min-height: auto;
+}
+
 .accordion {
   width: 100%;
   overflow-wrap: anywhere;
